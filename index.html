@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人自我介紹 | 我的作品集</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+                /* 基本設定 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            scroll-behavior: smooth; /* 平滑捲動 */
+        }
+
+        /* 導覽列樣式 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Hero 區塊 */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* 區塊共通樣式 */
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .skill-tags span {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#skills">專業技能</a></li>
+            <li><a href="#contact">聯絡我</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>你好，我是 [你的名字]</h1>
+            <p>一名熱愛技術與創意的網頁開發者</p>
+            <a href="#about" class="btn">了解更多</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>關於我</h2>
+        <p>在這裡寫下你的背景。例如：目前就讀於某某大學資管系，專注於前端開發與 AI 應用。</p>
+    </section>
+
+    <section id="skills">
+        <h2>專業技能</h2>
+        <div class="skill-tags">
+            <span>HTML / CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>C++</span>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 [你的名字]. 保留所有權利。</p>
+        <p>Email: example@email.com</p>
+    </footer>
+
+</body>
+</html>
